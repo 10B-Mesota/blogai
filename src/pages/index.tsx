@@ -10,19 +10,20 @@ import Tag from "../Components/tags/tag";
 import { BiHelpCircle } from "react-icons/bi";
 
 const Home: NextPage = () => {
-  const [filter, setFilter] = useState([""]);
+  const [filter, setFilter] = useState({
+    Business: false,
+    Marketing: false,
+    CopyWriting: false,
+    Text: false,
+    Video: false,
+    Image: false,
+    Game: false,
+    Research: false,
+    Voice: false,
+  });
   const entries = api.post.getPosts.useQuery;
 
-  const set_tag = (tag: string) => {
-    if (filter.includes(tag)) {
-      const index = filter.indexOf(tag);
-      filter.splice(index, 1);
-      setFilter(filter);
-    } else {
-      filter.push(tag);
-      setFilter(filter);
-    }
-  };
+  const set_tag = (arg) => {};
 
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -41,49 +42,49 @@ const Home: NextPage = () => {
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Marketing")}
             >
               #Marketing
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("CopyWriting")}
             >
               #Copywriting
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Text")}
             >
               #Text
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Video")}
             >
               #Video
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Image")}
             >
               #Image
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Game")}
             >
               #Game
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Research")}
             >
               #Research
             </button>
             <button
               className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
-              onClick={() => set_tag("Business")}
+              onClick={() => set_tag("Voice")}
             >
               #Voice
             </button>
