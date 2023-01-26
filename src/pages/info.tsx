@@ -18,7 +18,7 @@ const info: NextPage = () => {
       </div>
       <Link href="/">
         <button className="btn-outline btn-circle btn fixed bottom-5 right-5 text-center text-3xl">
-          <AiOutlineHome/>
+          <AiOutlineHome className="h-8 w-8"/>
         </button>
       </Link>
     </>
