@@ -10,20 +10,21 @@ import Tag from "../Components/tags/tag";
 import { BiHelpCircle } from "react-icons/bi";
 
 const Home: NextPage = () => {
-  const [filter, setFilter] = useState({
-    Business: false,
-    Marketing: false,
-    CopyWriting: false,
-    Text: false,
-    Video: false,
-    Image: false,
-    Game: false,
-    Research: false,
-    Voice: false,
-  });
+  const [filter, setFilter] = useState([""]);
   const entries = api.post.getPosts.useQuery;
 
-  const set_tag = (arg) => {};
+  const set_tag = (arg: string) => {
+    if (filter[0] == "") {
+      filter.splice(0, 1);
+    }
+
+    const index = filter.indexOf(arg);
+    if (index != -1) {
+      filter.splice(index, 1);
+    } else {
+      filter.push(arg);
+    }
+  };
 
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -92,7 +93,7 @@ const Home: NextPage = () => {
         </>
       </div>
       <div className="grid grid-cols-2 items-center">
-        {entries({}).data?.map((e) => (
+        {entries({ tags: filter }).data?.map((e) => (
           <div className="p-10" key={e.name}>
             <Card name={e.name} short_desciption={e.description}></Card>
           </div>

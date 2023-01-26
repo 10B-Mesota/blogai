@@ -31,7 +31,7 @@ export const postRouter = createTRPCRouter({
       })
     )
     .query(async ({ ctx, input }) => {
-      if (!input.tags) {
+      if (!input.tags || input.tags.length == 0) {
         const data = await ctx.prisma.blogEntry.findMany({});
         return data;
       }
