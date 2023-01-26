@@ -91,7 +91,7 @@ const Home: NextPage = () => {
         </>
       </div>
       <div className="flex flex-col items-center">
-        {entries({ tags: filter }).data?.map((e) => (
+        {entries({}).data?.map((e) => (
           <div className="py-10" key={e.name}>
             <Card name={e.name} short_desciption={e.description}></Card>
           </div>
