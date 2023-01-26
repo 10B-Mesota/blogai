@@ -35,55 +35,55 @@ const Home: NextPage = () => {
         <>
           <div className="mt-[1vh] flex">
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold  text-gray-800 shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold  text-gray-800 shadow transition-all hover:bg-gray-300"
               onClick={() => set_tag("Business")}
             >
               #Business
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Marketing")}
             >
               #Marketing
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("CopyWriting")}
             >
               #Copywriting
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Text")}
             >
               #Text
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Video")}
             >
               #Video
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Image")}
             >
               #Image
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Game")}
             >
               #Game
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Research")}
             >
               #Research
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Voice")}
             >
               #Voice
