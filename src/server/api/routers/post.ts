@@ -1,3 +1,4 @@
+import { BlogEntry } from "@prisma/client";
 import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "../trpc";
@@ -31,26 +32,24 @@ export const postRouter = createTRPCRouter({
     )
     .query(async ({ ctx, input }) => {
       if (!input.tags) {
-        return await ctx.prisma.blogEntry.findMany({
-          select: {
-            tags: true,
-            name: true,
-            description: true,
-          },
-        });
+        return await ctx.prisma.blogEntry.findMany({});
       }
 
-      const data = input.tags
-        .map(async (tag) => {
-          return await ctx.prisma.blogEntry.findMany({
+      const data: BlogEntry[] = [];
+      input.tags.forEach(async (tag) => {
+        (
+          await ctx.prisma.blogEntry.findMany({
             where: {
               tags: {
                 has: tag,
               },
             },
-          });
-        })
-        .join();
+          })
+        ).forEach((e) => {
+          console.log();
+          data.push(e);
+        });
+      });
 
       return data;
     }),

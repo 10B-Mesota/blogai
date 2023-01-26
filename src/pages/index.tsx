@@ -23,11 +23,14 @@ const Home: NextPage = () => {
         <Tag tags={filter} />
       </div>
       <div className="flex flex-col items-center">
-        {(entries({}).data as BlogEntry[]).map((e) => (
-          <div className="py-10">
-            <Card name={e.name} short_desciption={e.description}></Card>
-          </div>
-        ))}
+        {
+          // entries({}) && <>asdf</>
+          entries({}).data?.map((e) => (
+            <div className="py-10">
+              <Card name={e.name} short_desciption={e.description}></Card>
+            </div>
+          ))
+        }
       </div>
       <Link href="/info">
         <button className="btn-outline btn-circle btn fixed bottom-5 right-5 text-center text-3xl">
