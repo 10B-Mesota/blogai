@@ -3,10 +3,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import React, { useState } from "react";
 import { api } from "../utils/api";
 import { useState } from "react";
 import { BlogEntry } from "@prisma/client";
+import Tag from "../Components/tags/tag";
 
 const Home: NextPage = () => {
   const [filter, setFilter] = useState([]);
