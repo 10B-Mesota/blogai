@@ -1,46 +1,45 @@
-import { useRouter } from "next/router";
+import { useState } from "react";
+import { BiRightArrowAlt, BiLeftArrowAlt } from "react-icons/bi";
 
 type CardProps = {
   name: string;
-  sorce: string;
-  text: string;
+  short_desciption: string;
 };
 
 const Card = (props: CardProps) => {
-  const router = useRouter();
+  const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <>
-      <div className="card h-[50vh] w-[30vw] bg-base-100 shadow-xl ">
-        <div className="card-body ">
-          <figure>
-            <div className="  rounded-xl">
-              <img src={props.sorce} className="h-32 w-32 object-fill" />
-            </div>
-          </figure>
-          <center>
-            <h2 className="card-title">{props.name}</h2>
-          </center>
-
-          <p className="break-words align-text-top">{props.text}</p>
-          <div className="card-actions justify-end">
-            <button
-              className="hover: rounded-full bg-green-500 py-2 px-4 font-bold text-emerald-100 hover:bg-green-700"
-              onClick={() => {
-                router.push({
-                  pathname: "/apply",
-                  query: {
-                    event_name: props.name,
-                  },
-                });
-              }}
-            >
-              Apply now
-            </button>
-          </div>
-        </div>
+    <div className="group relative flex h-80 rounded-md bg-slate-600 text-white shadow-xl">
+      <div
+        className={
+          (showDetails ? "border-r-2" : "") + " m-8 w-96 overflow-auto"
+        }
+      >
+        <div className="h-48 text-center text-5xl">Image</div>
+        <div className="text-center text-5xl">{props.name}</div>
+        <button
+          onClick={() => {
+            setShowDetails(!showDetails);
+          }}
+          className="absolute top-1/2 right-0"
+        >
+          {showDetails ? (
+            <BiLeftArrowAlt className="h-8 w-8 rounded-full bg-red-600 p-0.5 text-white" />
+          ) : (
+            <BiRightArrowAlt className="h-8 w-8 rounded-full bg-red-600 p-0.5 text-white" />
+          )}
+        </button>
       </div>
-    </>
+      <div
+        className={
+          (showDetails ? "w-96" : "w-0") +
+          " overflow-auto transition-all duration-500"
+        }
+      >
+        <div className="mx-8 my-4 text-xl">{props.short_desciption}</div>
+      </div>
+    </div>
   );
 };
 
