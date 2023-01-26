@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { BiHelpCircle } from "react-icons/bi";
 import React, { useState } from "react";
 import { api } from "../utils/api";
 import Tag from "../Components/tags/tag";
@@ -39,8 +40,8 @@ Maecenas sagittis ipsum tortor, ut euismod purus mattis a. Praesent ut neque pha
         </button>
       </Link>
       <Link href="/BenefitsAndDisadvantages">
-        <button className="btn-outline btn-circle btn fixed top-5 right-5 text-center text-3xl">
-          <AiOutlineInfoCircle className="h-8 w-8" />
+        <button className="btn-outline btn-circle btn fixed bottom-5 left-5 text-center text-3xl">
+          <BiHelpCircle className="h-8 w-8" />
         </button>
       </Link>
     </div>
