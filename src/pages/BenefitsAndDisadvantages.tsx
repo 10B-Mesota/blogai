@@ -11,7 +11,7 @@ const BenefitsAndDisadvantages = () => {
               <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
             </Link>
           </div>
-          <div className="mt-[5vh] ml-[10vw] w-[80vw] font-sans text-[#e2e8f0]">
+          <div className="text-l mt-[5vh] ml-[10vw] w-[80vw] font-sans text-[#e2e8f0]">
             <p className="text-xl font-bold">
               Advantages and Disadvantages of Artificial Intelligence
             </p>
