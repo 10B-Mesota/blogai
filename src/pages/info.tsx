@@ -33,7 +33,7 @@ const info: NextPage = () => {
         </h1>
         <Link href="https://reactjs.org/">
           <img
-            className="h-[10vh] w-[10vw]"
+            className="h-[10vh] w-[10vw] ml-[1vw]"
             src="800px-Nextjs-logo.svg.png"
           ></img>
         </Link>
@@ -43,24 +43,24 @@ const info: NextPage = () => {
           CSS framework:
         </h1>
         <Link href="https://tailwindcss.com/">
-          <img className="h-[10vh] w-[13vw]" src="pngwing.com(1).png"></img>
+          <img className="h-[10vh] w-[13vw] ml-[1vw]" src="pngwing.com(1).png"></img>
         </Link>
       </div>
-      <div className="flex items-center mt-[10vh] ml-[50vw]">
+      <div className="flex items-center mt-[9vh] ml-[50vw]">
         <h1 className="text-5xl text-gray-800">
           CSS component library:
         </h1>
         <Link href="https://daisyui.com/">
-          <img className="h-[10vh] w-[10vw]" src="logo-4.svg"></img>
+          <img className="h-[10vh] w-[10vw] ml-[1vw] mt-[1vw]" src="logo-4.svg"></img>
         </Link>
       </div>
-      <div className="flex items-center mt-[10vh] ml-[15vw]">
+      <div className="flex items-center mt-[8vh] ml-[15vw]">
         <h1 className="text-5xl text-gray-800">
           Information source:
         </h1>
         <Link href="https://www.futuretools.io/">
           <img
-            className="h-[6vh] w-[15vw]"
+            className="ml-[1vh] h-[6vh] w-[15vw]"
             src="639d02188defc07c32bea5b0_Future Tools Logo-p-500.png"
           ></img>
         </Link>
