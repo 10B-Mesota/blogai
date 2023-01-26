@@ -10,7 +10,7 @@ const Card = (props: CardProps) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="group relative flex h-80 rounded-md bg-slate-600 text-white shadow-xl">
+    <div className="group relative flex h-80 rounded-md bg-slate-600 text-white shadow-xl ">
       <div
         className={
           (showDetails ? "border-r-2" : "") + " m-8 w-96 overflow-auto"
@@ -34,7 +34,7 @@ const Card = (props: CardProps) => {
       <div
         className={
           (showDetails ? "w-96" : "w-0") +
-          " overflow-auto transition-all duration-500"
+          " overflow-auto transition-all duration-500 scrollbar"
         }
       >
         <div className="mx-8 my-4 text-xl">{props.short_desciption}</div>
@@ -43,4 +43,4 @@ const Card = (props: CardProps) => {
   );
 };
 
-export default Card;
+export default Card
