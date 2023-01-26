@@ -10,8 +10,19 @@ import Tag from "../Components/tags/tag";
 import { BiHelpCircle } from "react-icons/bi";
 
 const Home: NextPage = () => {
-  const [filter, setFilter] = useState([]);
+  const [filter, setFilter] = useState([""]);
   const entries = api.post.getPosts.useQuery;
+
+  const set_tag = (tag: string) => {
+    if (filter.includes(tag)) {
+      const index = filter.indexOf(tag);
+      filter.splice(index, 1);
+      setFilter(filter);
+    } else {
+      filter.push(tag);
+      setFilter(filter);
+    }
+  };
 
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -20,17 +31,71 @@ const Home: NextPage = () => {
           <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
           <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
         </Link>
-        <Tag tags={filter} />
+        <>
+          <div className="mt-[1vh] flex">
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold  text-gray-800 shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Business
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Marketing
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Copywriting
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Text
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Video
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Image
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Game
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Research
+            </button>
+            <button
+              className="h-[3vh] rounded-full bg-white py-2 px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              onClick={() => set_tag("Business")}
+            >
+              #Voice
+            </button>
+          </div>
+        </>
       </div>
       <div className="flex flex-col items-center">
-        {
-          // entries({}) && <>asdf</>
-          entries({}).data?.map((e) => (
-            <div className="py-10">
-              <Card name={e.name} short_desciption={e.description}></Card>
-            </div>
-          ))
-        }
+        {entries({ tags: filter }).data?.map((e) => (
+          <div className="py-10" key={e.name}>
+            <Card name={e.name} short_desciption={e.description}></Card>
+          </div>
+        ))}
       </div>
       <Link href="/info">
         <button className="btn-outline btn-circle btn fixed bottom-5 right-5 text-center text-3xl">

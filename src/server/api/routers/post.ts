@@ -32,11 +32,12 @@ export const postRouter = createTRPCRouter({
     )
     .query(async ({ ctx, input }) => {
       if (!input.tags) {
-        return await ctx.prisma.blogEntry.findMany({});
+        const data = await ctx.prisma.blogEntry.findMany({});
+        return data;
       }
 
       const data: BlogEntry[] = [];
-      input.tags.forEach(async (tag) => {
+      for (const tag of input.tags) {
         (
           await ctx.prisma.blogEntry.findMany({
             where: {
@@ -46,10 +47,9 @@ export const postRouter = createTRPCRouter({
             },
           })
         ).forEach((e) => {
-          console.log();
           data.push(e);
         });
-      });
+      }
 
       return data;
     }),
