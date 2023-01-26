@@ -9,7 +9,12 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <h1 className="bg-blue-400 text-white rounded-bl-lg py-5 px-10 rounded-br-lg text-5xl">Blog A.I.</h1>
+      <div className="bg-blue-200 rounded-bl-lg py-0.5 rounded-br-lg flex">
+        <Link href="/">
+          <img className="max-w-lg h-[5vh] w-[vw] float-left" src="logo.png"></img>
+          <h1 className="text-indigo-900 text-4xl float-left">Blog A.I.</h1>
+        </Link>
+      </div>
     </>
   );
 };
