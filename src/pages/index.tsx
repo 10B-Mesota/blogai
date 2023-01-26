@@ -39,6 +39,11 @@ Maecenas sagittis ipsum tortor, ut euismod purus mattis a. Praesent ut neque pha
           <AiOutlineInfoCircle className="h-8 w-8" />
         </button>
       </Link>
+      <Link href="/BenefitsAndDisadvantages">
+        <button className="btn-outline btn-circle btn fixed top-5 right-5 text-center text-3xl">
+          <AiOutlineInfoCircle className="h-8 w-8" />
+        </button>
+      </Link>
     </div>
   );
 };
