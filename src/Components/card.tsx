@@ -10,7 +10,7 @@ const Card = (props: CardProps) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="group relative flex h-80 rounded-md bg-slate-600 text-white shadow-xl ">
+    <div className="group relative flex h-80 rounded-md bg-[#00CED1] text-white shadow-xl ">
       <div
         className={
           (showDetails ? "border-r-2" : "") +
@@ -25,9 +25,9 @@ const Card = (props: CardProps) => {
           className="absolute top-1/2 right-0"
         >
           {showDetails ? (
-            <BiLeftArrowAlt className="h-8 w-8 rounded-full bg-red-600 p-0.5 text-white" />
+            <BiLeftArrowAlt className="h-8 w-8 rounded-full bg-white p-0.5 text-blue-500" />
           ) : (
-            <BiRightArrowAlt className="h-8 w-8 rounded-full bg-red-600 p-0.5 text-white" />
+            <BiRightArrowAlt className="h-8 w-8 rounded-full bg-white p-0.5 text-blue-500" />
           )}
         </button>
       </div>
