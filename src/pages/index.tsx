@@ -2,7 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
-import {AiOutlineInfoCircle} from 'react-icons/ai';
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 import { api } from "../utils/api";
 
@@ -36,7 +36,7 @@ Maecenas sagittis ipsum tortor, ut euismod purus mattis a. Praesent ut neque pha
       </div>
       <Link href="/info">
         <button className="btn-outline btn-circle btn fixed bottom-5 right-5 text-center text-3xl">
-          <AiOutlineInfoCircle />
+          <AiOutlineInfoCircle className="h-8 w-8" />
         </button>
       </Link>
     </div>
