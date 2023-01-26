@@ -3,12 +3,13 @@ import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-
+import React, { useState } from "react";
 import { api } from "../utils/api";
+import Tag from "../Components/tags/tag";
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
+  const [filter, setfilter] = useState([]);
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-500 to-blue-500">
       <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
           <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
           <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
         </Link>
+        <Tag tags={filter} />
       </div>
       <div className="flex flex-col items-center">
         {[...Array(10)].map((e) => (
