@@ -18,6 +18,12 @@ const Card = (props: CardProps) => {
         }
       >
         <div className="text-center text-5xl">{props.name}</div>
+        <div className="borde h-[20vh] w-[15vw]">
+          <img
+            src={props.name + "-logo.png"}
+            className="h-[20vh] w-[15vw] rounded object-cover"
+          ></img>
+        </div>
         <button
           onClick={() => {
             setShowDetails(!showDetails);
