@@ -4,15 +4,15 @@ const BenefitsAndDisadvantages = () => {
   return (
     <>
       <div className="scrollbar h-screen space-y-4 overflow-y-scroll rounded-lg  border bg-white text-gray-500">
-        <div className="flex flex-col justify-center bg-gray-100 ">
+        <div className="flex flex-col justify-center bg-gradient-to-r from-sky-500 to-indigo-500">
           <div className="fixed top-0 flex w-[100vw] rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
             <Link href="/">
               <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
               <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
             </Link>
           </div>
-          <div className="mt-[5vh] ml-[10vw] w-[50vw] font-sans text-black">
-            <p className="text-xl">
+          <div className="mt-[5vh] ml-[10vw] w-[80vw] font-sans text-[#e2e8f0]">
+            <p className="text-xl font-bold">
               Advantages and Disadvantages of Artificial Intelligence
             </p>
             <br />
@@ -31,7 +31,9 @@ const BenefitsAndDisadvantages = () => {
               discuss in this article.&nbsp;
             </p>
             <br />
-            <p className="text-xl">What is Artificial Intelligence?</p>
+            <p className="text-xl font-bold">
+              What is Artificial Intelligence?
+            </p>
             <br />
             <p>
               Before we jump on to the advantages and disadvantages of
@@ -67,7 +69,8 @@ const BenefitsAndDisadvantages = () => {
                 <br />
               </li>
             </ul>
-            <p className="text-xl">
+            <img src="ai1.png" className="h-48 w-96 rounded-lg object-cover" />
+            <p className="text-xl font-bold">
               Advantages &amp; Disadvantages of Artificial Intelligence
             </p>
             <br />
@@ -79,9 +82,11 @@ const BenefitsAndDisadvantages = () => {
               Let&apos;s begin with the advantages of artificial intelligence.
             </p>
             <br />
-            <p className="text-xl">Advantages of Artificial Intelligence</p>
+            <p className="text-xl font-bold">
+              Advantages of Artificial Intelligence
+            </p>
             <br />
-            <p className="text-xl">1. Reduction in Human Error</p>
+            <p className="text-xl font-bold">1. Reduction in Human Error</p>
             <br />
             <p>
               One of the biggest advantages of Artificial Intelligence is that
@@ -92,7 +97,7 @@ const BenefitsAndDisadvantages = () => {
               null.&nbsp;
             </p>
             <br />
-            <p className="text-xl">2. Zero Risks</p>
+            <p className="text-xl font-bold">2. Zero Risks</p>
             <p>
               Another big advantage of AI is that humans can overcome many risks
               by letting AI robots do them for us. Whether it be defusing a
@@ -102,7 +107,7 @@ const BenefitsAndDisadvantages = () => {
               with greater responsibility and not wear out easily.
             </p>
             <br />
-            <p className="text-xl">3. 24x7 Availability</p>
+            <p className="text-xl font-bold">3. 24x7 Availability</p>
             <br />
             <p>
               There are many studies that show humans are productive only about
@@ -114,7 +119,7 @@ const BenefitsAndDisadvantages = () => {
               algorithms.&nbsp;
             </p>
             <br />
-            <p className="text-xl">4. Digital Assistance</p>
+            <p className="text-xl font-bold">4. Digital Assistance</p>
             <br />
             <p>
               Some of the most technologically advanced companies engage with
@@ -133,7 +138,7 @@ const BenefitsAndDisadvantages = () => {
               clients&apos; questions using AI.
             </p>
             <br />
-            <p className="text-xl">5. New Inventions</p>
+            <p className="text-xl font-bold">5. New Inventions</p>
             <br />
             <p>
               In practically every field, AI is the driving force behind
@@ -141,13 +146,14 @@ const BenefitsAndDisadvantages = () => {
               majority of challenging issues.
             </p>
             <br />
+            <img src="ai2.png" className="h-48 w-96 rounded-lg object-cover" />
             <p>
               For instance, recent advances in AI-based technologies have
               allowed doctors to detect breast cancer in a woman at an earlier
               stage.
             </p>
             <br />
-            <p className="text-xl">6. Unbiased Decisions</p>
+            <p className="text-xl font-bold">6. Unbiased Decisions</p>
             <br />
             <p>
               Human beings are driven by emotions, whether we like it or not. AI
@@ -157,7 +163,7 @@ const BenefitsAndDisadvantages = () => {
               ensures more accurate decision-making.
             </p>
             <br />
-            <p className="text-xl">7. Perform Repetitive Jobs</p>
+            <p className="text-xl font-bold">7. Perform Repetitive Jobs</p>
             <br />
             <p>
               We will be doing a lot of repetitive tasks as part of our daily
@@ -176,7 +182,7 @@ const BenefitsAndDisadvantages = () => {
               owner by using AI Cognitive Automation.
             </p>
             <br />
-            <p className="text-xl">8. Daily Applications</p>
+            <p className="text-xl font-bold">8. Daily Applications</p>
             <br />
             <p>
               Today, our everyday lives are entirely dependent on mobile devices
@@ -195,7 +201,7 @@ const BenefitsAndDisadvantages = () => {
               Bangalore&apos;s location, on a Google map.
             </p>
             <br />
-            <p className="text-xl">9. AI in Risky Situations</p>
+            <p className="text-xl font-bold">9. AI in Risky Situations</p>
             <br />
             <p>
               One of the main benefits of artificial intelligence is this. By
@@ -214,10 +220,13 @@ const BenefitsAndDisadvantages = () => {
               were no AI-powered robots that could assist us in reducing the
               effects of radiation by controlling the fire in its early phases.
             </p>
+            <img src="ai.png" className="h-48 w-96 rounded-lg object-cover" />
             <br />
-            <p className="text-xl">Disadvantages of Artificial Intelligence</p>
+            <p className="text-xl font-bold">
+              Disadvantages of Artificial Intelligence
+            </p>
             <br />
-            <p className="text-xl">1. High Costs</p>
+            <p className="text-xl font-bold">1. High Costs</p>
             <br />
             <p>
               The ability to create a machine that can simulate human
@@ -227,7 +236,7 @@ const BenefitsAndDisadvantages = () => {
               meet the latest requirements, thus making it quite costly.
             </p>
             <br />
-            <p className="text-xl">2. No creativity</p>
+            <p className="text-xl font-bold">2. No creativity</p>
             <br />
             <p>
               A big disadvantage of AI is that it cannot learn to think outside
@@ -240,7 +249,7 @@ const BenefitsAndDisadvantages = () => {
               other Forbes articles.&nbsp;
             </p>
             <br />
-            <p className="text-xl">3. Unemployment</p>
+            <p className="text-xl font-bold">3. Unemployment</p>
             <br />
             <p>
               One application of artificial intelligence is a robot, which is
@@ -258,7 +267,7 @@ const BenefitsAndDisadvantages = () => {
               also replacing humans in order to increase efficiency.
             </p>
             <br />
-            <p className="text-xl">4. Make Humans Lazy</p>
+            <p className="text-xl font-bold">4. Make Humans Lazy</p>
             <br />
             <p>
               AI applications automate the majority of tedious and repetitive
@@ -267,7 +276,7 @@ const BenefitsAndDisadvantages = () => {
               addiction to AI can cause problems to future generations.
             </p>
             <br />
-            <p className="text-xl">5. No Ethics</p>
+            <p className="text-xl font-bold">5. No Ethics</p>
             <br />
             <p>
               Ethics and morality are important human features that can be
@@ -277,7 +286,7 @@ const BenefitsAndDisadvantages = () => {
               referred to as the AI singularity.
             </p>
             <br />
-            <p className="text-xl">6. Emotionless</p>
+            <p className="text-xl font-bold">6. Emotionless</p>
             <br />
             <p>
               Since early childhood, we have been taught that neither computers
@@ -288,7 +297,7 @@ const BenefitsAndDisadvantages = () => {
               form the basis of teams, cannot be replaced by computers.
             </p>
             <br />
-            <p className="text-xl">7. No Improvement</p>
+            <p className="text-xl font-bold">7. No Improvement</p>
             <br />
             <p>
               Humans cannot develop artificial intelligence because it is a
