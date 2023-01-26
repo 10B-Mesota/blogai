@@ -9,15 +9,17 @@ const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
-    (
     <div className="min-h-screen bg-gradient-to-br from-slate-500 to-blue-500">
-      <div className="bg-blue-200 rounded-bl-lg py-0.5 rounded-br-lg flex">
+      <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
         <Link href="/">
-          <img className="max-w-lg h-[5vh] w-[vw] float-left" src="logo.png"></img>
-          <h1 className="text-indigo-900 text-4xl float-left">Blog A.I.</h1>
+          <img
+            className="float-left h-[5vh] w-[vw] max-w-lg"
+            src="logo.png"
+          ></img>
+          <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
         </Link>
       </div>
-    
+
       <div className="flex flex-col items-center">
         {[...Array(10)].map((e) => (
           <div className="py-10">
@@ -29,7 +31,6 @@ Sed lobortis eros ac urna vestibulum gravida et vitae quam. Ut iaculis tincidunt
 Suspendisse eu elit facilisis tortor maximus dignissim. Proin fringilla blandit consequat. Sed ut varius nisl. Mauris id sapien consequat nunc semper semper eget eget risus. Fusce efficitur erat accumsan leo varius, quis pharetra magna rhoncus. Integer tempor eleifend nunc et vehicula. Ut pulvinar turpis vitae dui fringilla, molestie faucibus ex placerat. Maecenas dictum risus ante, non semper sapien finibus ac.
 Maecenas sagittis ipsum tortor, ut euismod purus mattis a. Praesent ut neque pharetra, sodales felis sed, dictum est. Aliquam eleifend dolor vel hendrerit euismod. Suspendisse luctus non leo sed tincidunt. Nunc vel pretium erat. Phasellus scelerisque hendrerit dui, in luctus urna semper ut. Morbi sollicitudin, risus quis posuere gravida, orci lorem pretium ligula, vel rhoncus tortor lacus a tellus. Maecenas auctor augue quam, ac lobortis justo malesuada ut. "
             ></Card>
-  )
           </div>
         ))}
       </div>
