@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   const [filter, setfilter] = useState([]);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-500 to-blue-500">
+    <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
       <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
         <Link href="/">
           <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
