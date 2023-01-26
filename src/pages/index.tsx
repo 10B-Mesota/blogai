@@ -90,9 +90,9 @@ const Home: NextPage = () => {
           </div>
         </>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="grid grid-cols-2 items-center">
         {entries({}).data?.map((e) => (
-          <div className="py-10" key={e.name}>
+          <div className="p-10" key={e.name}>
             <Card name={e.name} short_desciption={e.description}></Card>
           </div>
         ))}
