@@ -10,7 +10,7 @@ const Card = (props: CardProps) => {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="group relative flex h-80 rounded-md bg-[#00CED1] text-white shadow-xl ">
+    <div className="group relative flex h-80 rounded-md bg-gradient-to-r from-sky-400 to-indigo-400 text-white shadow-xl transition-all hover:scale-105">
       <div
         className={
           (showDetails ? "border-r-2" : "") +
@@ -18,10 +18,10 @@ const Card = (props: CardProps) => {
         }
       >
         <div className="text-center text-5xl">{props.name}</div>
-        <div className="borde h-[20vh] w-[15vw]">
+        <div className="borde  mt-[2vh] h-[15vh] w-[15vw]">
           <img
             src={props.name + "-logo.png"}
-            className="h-[20vh] w-[15vw] rounded object-cover"
+            className="h-[15vh] w-[15vw] rounded object-cover"
           ></img>
         </div>
         <button
