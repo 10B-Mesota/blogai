@@ -5,7 +5,7 @@ const BenefitsAndDisadvantages = () => {
     <>
       <div className="scrollbar h-screen space-y-4 overflow-y-scroll rounded-lg  border bg-white text-gray-500">
         <div className="flex flex-col justify-center bg-gradient-to-r from-sky-500 to-indigo-500">
-          <div className="fixed top-0 flex w-[100vw] rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
+          <div className="fixed top-0 flex w-[100vw] rounded-bl-lg rounded-br-lg bg-gradient-to-r from-sky-500 to-indigo-300 py-0.5">
             <Link href="/">
               <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
               <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>

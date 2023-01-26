@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
-      <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
+      <div className="flex rounded-bl-lg rounded-br-lg bg-gradient-to-r from-sky-500 to-indigo-300 py-0.5">
         <Link href="/">
           <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
           <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
@@ -36,55 +36,55 @@ const Home: NextPage = () => {
         <>
           <div className="mt-[1vh] flex">
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold  text-gray-800 shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold  text-gray-800 shadow transition-all hover:bg-gray-300"
               onClick={() => set_tag("Business")}
             >
               #Business
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Marketing")}
             >
               #Marketing
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("CopyWriting")}
             >
               #Copywriting
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Text")}
             >
               #Text
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-gradient-to-r from-sky-500 to-indigo-300  px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Video")}
             >
               #Video
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Image")}
             >
               #Image
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Game")}
             >
               #Game
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Research")}
             >
               #Research
             </button>
             <button
-              className="h-[3vh] rounded-full bg-white px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
+              className="h-[3vh] rounded-full bg-white bg-gradient-to-r px-4 font-semibold text-gray-800  shadow hover:bg-gray-300"
               onClick={() => set_tag("Voice")}
             >
               #Voice

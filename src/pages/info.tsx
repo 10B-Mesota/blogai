@@ -8,7 +8,7 @@ import { api } from "../utils/api";
 const info: NextPage = () => {
   return (
     <div className="h-[100vh] bg-gradient-to-r from-sky-500 to-indigo-500">
-      <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
+      <div className="flex rounded-bl-lg rounded-br-lg bg-gradient-to-r from-sky-500 to-indigo-300  py-0.5">
         <Link href="/">
           <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
           <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
