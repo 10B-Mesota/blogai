@@ -19,48 +19,48 @@ const info: NextPage = () => {
           <AiOutlineHome className="h-8 w-8" />
         </button>
       </Link>
-      <div className=" vl[20vw ] mt-[20vh] ml-[40vw] flex h-[10vh] w-[30vw] border">
-        <h1 className="absolute float-left  text-5xl text-gray-800">
+      <div className="mt-[4vh] ml-[32vw] flex items-center">
+        <h1 className="text-5xl text-gray-800">
           JavaScript library:
         </h1>
         <Link href="https://reactjs.org/">
-          <img className="h-[10vh] w-[10vw] " src="pngwing.com.png"></img>
+          <img className="h-[15vh] w-[10vw]" src="pngwing.com.png"></img>
         </Link>
       </div>
-      <div className=" vl[20vw ]flex h-[10vh]  w-[30vw] border">
-        <h1 className="absolute float-left  text-5xl text-gray-800">
+      <div className="mt-[10vh] ml-[68vw] flex items-center">
+        <h1 className="text-5xl text-gray-800">
           React framework:
         </h1>
         <Link href="https://reactjs.org/">
           <img
-            className="h-[10vh] w-[10vw] "
+            className="h-[10vh] w-[10vw]"
             src="800px-Nextjs-logo.svg.png"
           ></img>
         </Link>
       </div>
-      <div className=" vl[20vw ]flex  h-[10vh] w-[30vw] border">
-        <h1 className="absolute float-left  text-5xl text-gray-800">
+      <div className=" mt-[10vh] ml-[1vw] flex items-center">
+        <h1 className="float-left  text-5xl text-gray-800">
           CSS framework:
         </h1>
         <Link href="https://tailwindcss.com/">
-          <img className="h-[10vh] w-[10vw] " src="pngwing.com(1).png"></img>
+          <img className="h-[10vh] w-[13vw]" src="pngwing.com(1).png"></img>
         </Link>
       </div>
-      <div className=" vl[20vw ]flex h-[10vh] w-[30vw] border">
-        <h1 className="absolute float-left  text-5xl text-gray-800">
+      <div className="flex items-center mt-[10vh] ml-[50vw]">
+        <h1 className="text-5xl text-gray-800">
           CSS component library:
         </h1>
         <Link href="https://daisyui.com/">
-          <img className="h-[10vh] w-[10vw] " src="logo-4.svg"></img>
+          <img className="h-[10vh] w-[10vw]" src="logo-4.svg"></img>
         </Link>
       </div>
-      <div className=" vl[20vw ]flex  h-[10vh] w-[30vw] border">
-        <h1 className="absolute float-left  text-5xl text-gray-800">
+      <div className="flex items-center mt-[10vh] ml-[15vw]">
+        <h1 className="text-5xl text-gray-800">
           Information source:
         </h1>
         <Link href="https://www.futuretools.io/">
           <img
-            className="h-[10vh] w-[10vw] "
+            className="h-[6vh] w-[15vw]"
             src="639d02188defc07c32bea5b0_Future Tools Logo-p-500.png"
           ></img>
         </Link>
