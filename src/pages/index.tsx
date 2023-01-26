@@ -93,7 +93,7 @@ const Home: NextPage = () => {
         </>
       </div>
       <div className="grid grid-cols-2 items-center">
-        {entries({ tags: filter }).data?.map((e) => (
+        {entries({}).data?.map((e) => (
           <div className="p-10" key={e.name}>
             <Card name={e.name} short_desciption={e.description}></Card>
           </div>
