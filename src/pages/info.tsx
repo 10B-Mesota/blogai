@@ -21,6 +21,10 @@ const info: NextPage = () => {
           <AiOutlineHome className="h-8 w-8"/>
         </button>
       </Link>
+      <h1>JavaScript library:</h1>
+      <img className="h-[10vh]" src="pngwing.com.png"></img>
+      <h1>React framework:</h1>
+      <img className="h-[10vh]" src="800px-Nextjs-logo.svg.png"></img>
     </>
   );
 };
