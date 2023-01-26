@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-
+import React, { useState } from "react";
 import { api } from "../utils/api";
 import { useState } from "react";
 import { BlogEntry } from "@prisma/client";
@@ -19,15 +19,13 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-br from-slate-500 to-blue-500">
+    <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
       <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">
         <Link href="/">
-          <img
-            className="float-left h-[5vh] w-[vw] max-w-lg"
-            src="logo.png"
-          ></img>
+          <img className="float-left h-[5vh] max-w-lg" src="logo.png"></img>
           <h1 className="float-left text-4xl text-indigo-900">Blog A.I.</h1>
         </Link>
+        <Tag tags={filter} />
       </div>
       <div className="flex flex-col items-center">
         {data().map((e) => (
@@ -38,6 +36,11 @@ const Home: NextPage = () => {
       </div>
       <Link href="/info">
         <button className="btn-outline btn-circle btn fixed bottom-5 right-5 text-center text-3xl">
+          <AiOutlineInfoCircle className="h-8 w-8" />
+        </button>
+      </Link>
+      <Link href="/BenefitsAndDisadvantages">
+        <button className="btn-outline btn-circle btn fixed top-5 right-5 text-center text-3xl">
           <AiOutlineInfoCircle className="h-8 w-8" />
         </button>
       </Link>
