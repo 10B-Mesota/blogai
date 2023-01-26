@@ -3,21 +3,15 @@ import Head from "next/head";
 import Link from "next/link";
 import Card from "../Components/card";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import React, { useState } from "react";
 import { api } from "../utils/api";
 import { useState } from "react";
 import { BlogEntry } from "@prisma/client";
 import Tag from "../Components/tags/tag";
+import { BiHelpCircle } from "react-icons/bi";
 
 const Home: NextPage = () => {
   const [filter, setFilter] = useState([]);
   const entries = api.post.getPosts.useQuery;
-
-  const data = () => {
-    const data = entries({});
-    console.log(data.data as BlogEntry[]);
-    return data.data as BlogEntry[];
-  };
 
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
@@ -29,7 +23,7 @@ const Home: NextPage = () => {
         <Tag tags={filter} />
       </div>
       <div className="flex flex-col items-center">
-        {data().map((e) => (
+        {(entries({}).data as BlogEntry[]).map((e) => (
           <div className="py-10">
             <Card name={e.name} short_desciption={e.description}></Card>
           </div>
