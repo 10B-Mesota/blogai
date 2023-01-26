@@ -6,8 +6,6 @@ import { AiOutlineHome } from "react-icons/ai";
 import { api } from "../utils/api";
 
 const info: NextPage = () => {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
   return (
     <div className="bg-gradient-to-r from-sky-500 to-indigo-500">
       <div className="flex rounded-bl-lg rounded-br-lg bg-blue-200 py-0.5">

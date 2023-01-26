@@ -34,7 +34,7 @@ const Card = (props: CardProps) => {
       <div
         className={
           (showDetails ? "w-96" : "w-0") +
-          " overflow-auto transition-all duration-500 scrollbar"
+          " scrollbar overflow-auto transition-all duration-500"
         }
       >
         <div className="mx-8 my-4 text-xl">{props.short_desciption}</div>

@@ -6,17 +6,16 @@ generator client {
 }
 
 datasource db {
-    provider = "postgresql"
+    provider = "mongodb"
     url      = env("DATABASE_URL")
 }
 
 model BlogEntry {
-    id        String   @id @default(cuid())
+    id        String   @id @default(auto()) @map("_id") @db.ObjectId
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    name              String
-    tags              String[]
-    description       String
-    short_description String
+    name        String
+    tags        String[]
+    description String
 }
